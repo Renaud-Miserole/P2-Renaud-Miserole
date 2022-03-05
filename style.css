@@ -15,7 +15,7 @@ html,body {
 .flexBetween {
     display: flex; 
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
 .flexcolumnCentre {
     display: flex;
@@ -65,22 +65,31 @@ html,body {
     height: 100px;
 }
 .sizeliens {
-    width: 45%;
+    width: 100%;
 }
-
+.sizelien12 {
+    margin-left: 60%;
+}
 .sizelien {
     width: 140px;
     height: 99px;
+
 } 
 
 .colorlien2 {
     color: black;
 }
 .bordureNav {
-    border-top: 1px solid blue;
+    border-top: 1px solid transparent;
+    
 }
-.bordureNav23 {
-    border-bottom: 1px solid transparent;
+.bordureNav:hover {
+    border-top: 1px solid #0065fc;
+    cursor: pointer;
+    
+}
+.bordureNav:hover > a {
+    color: #0065fc;
 }
 .marglogo {
     margin-bottom: 7px;
@@ -113,6 +122,10 @@ html,body {
     color: white;
     cursor: pointer;
     border-radius: 0 10px 10px;
+}
+.buttonsearch:hover {
+    color: #0065fc;
+    background-color: #f2f2f2;
 }
 
 /* Filtres*/
@@ -197,6 +210,10 @@ html,body {
     padding: 1%;
     border-radius: 20px;
 }
+.cubeherbegement:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 .cobedetailshebergement {
     width: 90%;
 }
@@ -262,6 +279,10 @@ html,body {
     padding: 1% 0 1% 1%;
     border-radius: 20px;
 }
+.cubepopulaire:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
 .cubedetailpopulaire {
     width: 60%;
     padding-left: 5%;
@@ -304,10 +325,18 @@ html,body {
     height: 600px;
 }
 /*reglage activité*/
+.cubeactivité:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
 .cubeactivité {
     width: 25%;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.cubeactivité2356:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 .cubeactivité2356 {
     width: 100%;
@@ -317,6 +346,13 @@ html,body {
 /*fin reglages bloc*/
 .hauteurtitre {
     height: 70px;
+}
+.titreactivité2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15%;
+    width: 95%;
 }
 .titreactivité {
     display: flex;
@@ -372,4 +408,43 @@ html,body {
     width: 100%;
     height: 200px;
     border-radius: 15px 15px 0 0;
+}
+/* footer*/
+.footer {
+    height: 300px;
+    margin-top: 100px;
+
+}
+.tailleblockfooter {
+    height: 150px;
+
+}
+.margBlockFoot {
+    margin-left: 15%;
+}
+.margBlockFoot13 {
+    margin-right: 15%;
+}
+.lienFoot {
+    color: black;
+}
+.divLienFoot {
+    height: 30px;
+}
+/*responsives*/
+@media screen and (max-width:1295px) {
+    .sizelien12{
+      margin-left: 35%;  
+    } 
+    .cubeherbegement {
+        min-height: 150px;
+    }
+    .sizehebergement {
+        min-height: auto;
+        padding: 20px;
+    }
+    .sizepopulaire {
+        min-height: auto;
+        padding: 20px;
+    }
 }
