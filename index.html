@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/02b0a89f0b.js" crossorigin="anonymous"></script>
-    <link href="htpps://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <title>Booki FR</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <nav class="sizeNav">
         <div class="sizeliens flexBetween">
-            <div>
-                <img class="marglogo" src="./img/Booki@3x.png" alt="logo Booki" width="120px" height="50px"/>
+            <div class="mobileTitrePara">
+                <img class="marglogo" src="./img/Booki@3x.png" alt="logo Booki" width="120" height="50"/>
             </div>   
             <div class=" sizelien12 flexCentre">
-                <div class="sizelien flexCentre bordureNav">
+                <div class="sizelien sizeLienMobile flexCentre bordureNav">
                     <a class="colorlien2 decorationNone " href="#Hébergements">Hébergements</a>
                 </div>
-                <div class="sizelien flexCentre bordureNav">
+                <div class="sizelien sizeLienMobile flexCentre bordureNav">
                 <a class="colorlien2 decorationNone" href="#Activités">Activités</a>
                 </div>
             </div>
@@ -27,7 +27,7 @@
   </nav>
   <header>
       <section>
-    <div>
+    <div class="mobileTitrePara">
               <h1 class="textegras">Trouvez votre hébergements pour vos vacances de rêves</h1>
               <p>En plein centre ville ou en pleine nature </p>
           </div>
@@ -35,13 +35,15 @@
               <div class="backgris flexCentre iconsize"><i class="fa-solid fa-location-dot"></i></div>
               <div>
                   <input class="recherche textegras flexCentre bordureNone paddingsearch" type="text" placeholder="Marseille, France"></div>
-              <div class="backbleu flexCentre buttonsearch ">Rechercher</div>
+              <div class="backbleu flexCentre buttonsearch ">
+                  <span class="mobileNone">Rechercher</span> 
+                  <span class="desktopNone"><i class="fa-solid fa-magnifying-glass"></i></span> </div>
           </div>
           <div class="mobileFiltreWrap filtre margfiltre">
               <div class="margflitretitre"><h3>Filtres</h3></div>
               <div class="flexAround">
-              <div class=" flexBetween filtretexteicons"><i class="fa-solid fa-money-bill-wave fa-lg filtreicons flexCentre"></i><div class="filtretexte flexCentre">Economiques</div></div>
-              <div class="flexBetween filtretexteicons"><i class="fa-solid fa-child fa-lg filtreicons flexCentre"></i> <div class="filtretexte flexCentre">Familiales</div> </div>
+              <div class=" mobileEconomique flexBetween filtretexteicons"><i class="fa-solid fa-money-bill-wave fa-lg filtreicons flexCentre"></i><div class="filtretexte flexCentre">Economiques</div></div>
+              <div class="mobilieFamilliales flexBetween filtretexteicons"><i class="fa-solid fa-child fa-lg filtreicons flexCentre"></i> <div class="filtretexte flexCentre">Familiales</div> </div>
               </div>
 
               <div class="mobileFiltreWrap flexAround ">
@@ -202,7 +204,7 @@
     </div>
   </section>
   <section id="Activités" class="activité"> 
-      <h2>Activités à Marseille</h2>
+      <h2 class="mobileTitrePara">Activités à Marseille</h2>
       <div class="blocactivité flexBetween">
           <div class="cubeactivité flexcolumnCentre">
               <div class="imgactivité1"></div>
