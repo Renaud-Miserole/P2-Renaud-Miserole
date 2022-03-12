@@ -103,11 +103,8 @@ html,body {
     border-radius: 10px;
     border: 0.5px solid #f2f2f2;
 }
-.paddingsearch {
-    padding: 20px;
-}
 .recherche {
-    height: 50px;
+    height: 45px;
     width:  230px;
     font-size: 18px;
     color: black;
