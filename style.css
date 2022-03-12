@@ -433,6 +433,7 @@ html,body {
     height: 30px;
 }
 /*responsives*/
+/* Grand ordinateur portable */
 @media screen and (max-width:1295px) {
     .sizelien12{
       margin-left: 35%;  
@@ -452,6 +453,7 @@ html,body {
         margin-top: 0;
     }
 }
+/*Partit pour ordinateur portable */
 @media screen and (max-width:990px){
     .mobileFiltreWrap {
         flex-direction: column;
@@ -478,7 +480,11 @@ html,body {
         padding: 5%;
     }
 }
+/* Telephone iphone 6/7/8 */
 @media screen and (max-width:770px){
+    .mobileTitrePara {
+        padding-left: 5%;
+    }
     .sizeliens {
         width: 90%;
     }
@@ -536,6 +542,7 @@ html,body {
         margin-left: 0; 
     }
 }
+/* telephone plus petit */
 @media screen and (max-width:600px) {
     .sizelien {
         flex-direction: row;
@@ -555,7 +562,7 @@ html,body {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .sizelienLienMobile:hover { 
+    .sizeLienMobile:hover { 
        border-top: 0;
        border-bottom: 5px solid #0065fc;
     }
@@ -604,8 +611,8 @@ html,body {
     .blockhebergement {
         background-color: white;
     }
-    .mobileTitrePara {
-        padding-left: 5%;
+    .mobileTitreLogo {
+        padding-left: 125px;
     }
     .blocactivité {
         padding: 5%; 
@@ -616,6 +623,3 @@ html,body {
         padding: 0;
     }
 }
-
-    
-
